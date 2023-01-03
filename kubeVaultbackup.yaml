@@ -45,7 +45,8 @@ metadata:
   name: vaultbackup
 spec:
   concurrencyPolicy: Forbid
-  schedule: "0 7 * * *"
+  schedule: "* * * * *"
+  # schedule: "0 7 * * *"
   jobTemplate:
     spec:
       template:
@@ -65,5 +66,5 @@ spec:
               - name: VAULT_ADDR
                 value: http://vault-active.vault.svc.cluster.local:8200
               - name: S3BUCKET
-                value: tekanaid-vault-backup-demo
+                value: tekanaid-vault-backup-demo1
           restartPolicy: OnFailure
