@@ -66,5 +66,5 @@ spec:
               - name: VAULT_ADDR
                 value: http://vault-active.vault.svc.cluster.local:8200
               - name: S3BUCKET
-                value: tekanaid-vault-backup-demo1
+                value: tekanaid-vault-backup-demo
           restartPolicy: OnFailure
